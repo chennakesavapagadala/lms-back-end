@@ -1,0 +1,60 @@
+# Environment variables
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# SQLite database
+db.sqlite3
+
+# Logs
+*.log
+
+# Media and static files
+/media/
+/staticfiles/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+
+# PyCharm
+.idea/
+
+# Optional: Ignore backup files
+*~
+*.swp
