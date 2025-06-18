@@ -1,0 +1,29 @@
+{% extends "rest_framework/base.html" %}
+
+{% block branding %}
+  <a class='navbar-brand text-white' href='/api/users/users/'>👤 Users</a>
+
+  <a class='navbar-brand' href='/api/courses/courses/'>📚 Courses</a>
+  
+  <a class='navbar-brand' href='/api/enrollments/'>📥 Enrollments</a>
+
+  <a class='navbar-brand' href='/api/assignments/'>📝 Assignments</a>
+
+  <a class='navbar-brand' href='/api/submissions/'>🔁 Submissions</a>
+
+  <a class='navbar-brand' href='/api/payments'>📥 Payments</a>
+
+{% endblock %}
+
+{% block content %}
+  <div style="padding: 20px; background-color: #f9f9f9;">
+    <h2>📘 Welcome to My Custom API</h2>
+    <p>This is your API testing area. Use the endpoints below to interact with your data.</p>
+  </div>
+
+     {% if user.is_authenticated %}
+        {{ user }}
+
+    {% endif %}
+
+{% endblock %}
